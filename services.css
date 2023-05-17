@@ -1,0 +1,332 @@
+*{
+    margin:0;
+}
+
+p{
+    font-family: 'DM Sans', sans-serif;
+}
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/********** MAIN HEADER TOP SECTION *************/
+
+.main-header-top{
+    background-color: #000;
+    color:#fff;  
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 30px 0 30px 0;
+   
+}
+/****display: flex;
+flex-direction: row;
+padding: 30px 0 30px 0;
+flex-wrap:wrap;
+gap:20px;
+justify-content: space-around; *****/
+
+.first-div{
+    display:flex;
+    gap:30px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+
+}
+.second-div{
+    display:flex;
+    justify-content: flex-end;
+    gap:30px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+   
+    }
+
+@media (max-width: 1065px){
+    .main-header-top{
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+           
+        }
+    }
+/********** NAVBAR SECTION *************/
+
+.header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+   
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    box-shadow: 0 1px 8px rgb(14, 13, 13);
+    background-color:#fff;
+  
+}
+
+#logo{
+    margin-right: auto;
+    font-size: 2rem;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #141417;
+    transition: all 0.3s ease 0s;
+    font-family: 'DM Sans', sans-serif;
+    font-size:18px;
+    font-weight:600;
+}
+
+.button-header{
+    border-style: none;
+    padding: 16px 32px 16px 32px;
+    background-color: red;
+    border-radius: 56px;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (max-width: 618px){
+    .button-header{
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+           
+        }
+    }
+
+
+/**************** HERO SECTION ****************/
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, transparent, rgba(7, 7, 7, 0.989)), url(images/breadcrumb-v1-bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:400px;
+    color:#fff;
+    font-size: 25px;
+   
+}
+
+/**************** SERVICES SECTION ****************/
+.subtitle-services{
+    color:red;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.title-services{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.container-services{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-flex-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-bottom: 50px;
+}
+.beauty-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.beauty-content{
+    font-size: 16px;
+    color: #676767;
+    line-height:28px;
+    padding-bottom: 20px;
+}
+.beauty-content:hover{
+    color: #fff;
+}
+.services{
+    background-color: #fff;
+    box-shadow: 0px 15px 50px 10px rgba(161, 160, 160, 0.3);
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+.services:hover{
+    background-color: red;
+    color:#fff;
+
+}
+.icon{
+    font-size: 34px;
+    background-color: #fff;
+    box-shadow: 0px 15px 50px 10px rgba(161, 160, 160, 0.3);
+    border-radius: 50%;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.iconn{
+    font-size:28px;
+}
+.services-information{
+   margin-top: -70px;
+}
+
+@media (max-width:618px){
+    .title-services{
+        font-size: 32px;
+    }
+    .services{
+        margin-bottom: 20px;
+    }
+}
+
+/**************** SUBSCRIBE SECTION *****************/
+.container-subscribe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+    height:250px;
+   
+}
+input {
+    
+    padding: 20px 60px 20px 60px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:#fff;
+}
+input:hover{
+    background-color: #fff;
+}
+
+::placeholder {
+    color:#fff;
+}
+.title-subscribe{
+    font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+}
+.button-subscribe{
+    background-color: #fff;
+    border-style: none;
+    padding: 20px 60px 20px 60px;
+    border-radius: 45px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button-subscribe:hover{
+    background-color: #000;
+}
+.button-subscribe > a{
+    text-decoration: none;
+    color:#000;
+}
+.button-subscribe > a:hover{
+    color:#fff;
+}
+
+@media (max-width:618px){
+    .container-subscribe {
+        height:100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+       
+    }
+    .title-subscribe{
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+    form{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+/*********** FOOTER SECTION **************/
+
+.footer{
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    color:#fff;
+    height:100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer > h1 {
+    padding-bottom: 20px;
+}
+.footer p  {
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.copyright{
+    background-color: #000;
+    color:rgb(159, 154, 154);
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-left: #000;
+    border-right: #000;
+    padding: 20px;
+}
+.copyright > p{
+    color:#fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+ footer a:hover {
+    color: #EB292C;
+}
+
+@media (max-width:618px){
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        height: 100%;
+    }
+}
+
